@@ -13,7 +13,7 @@ Color Vision Project
 *Coming soon*
 
 
-## Developer
+Roger Thao
 
 !!!Replace with your name!!!
 
