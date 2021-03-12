@@ -32,7 +32,7 @@ reader.open(text,ios::in );
 cout << "select more colors (yes/no)? \n";
 cin >> choice;
 cin.ignore();
-}while ("choice != no");
+}while (choice != "no");
   
   return 0;
 }

@@ -72,7 +72,7 @@ if (reader.is_open() ){
 
 ### Iteration
 
-I used a loop to ask the user at the end of the program if they want to select another three colors or not, but there is an issue that I can't figure out where the program resets whether the user enters yes or no.
+I used a "do, while" loop and asked the user at the end of the program if they want to select another three colors or not.
 
 do{
 cout << "select three colors. \n";
