@@ -102,7 +102,7 @@ cin.ignore();
 
 ### File Input and Output
 
-I asked the user for the colors in saved it into the file then asked them to enter the file so that the colors they typed in can be displayed back.
+I asked the user for the colors and saved it into the file then asked them to enter the file name so that the colors they typed in can be displayed back.
 
 cout << "select three colors. \n";
 getline( cin, colors);
