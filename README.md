@@ -2,7 +2,7 @@ Color Vision Project
 
 ## Description
 
-!!!Replace with a description of what your program does!!!
+My program asks the user to enter three numbers then enter the file to diplay the colors back.
 
 ### v0.2 Updates
 
@@ -15,7 +15,7 @@ Color Vision Project
 
 Roger Thao
 
-!!!Replace with your name!!!
+Roger Thao
 
 ## Example
 
@@ -29,30 +29,100 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-!!!Replace with an example of the program running with user interaction!!!
+select three colors. 
+red blue green
+Open the file marked colors.css 
+colors.css
+red blue green
 ```
 
 ## C++ Guide
 
 ### Variables and Data Types
 
-!!!Replace with a summary and examples of how multiple variables have been used with a variety of data types and why they have been used effectively and appropriately!!!
+I used "string choice;" for a do while loop at the end of the program, I also used "string colors, text;" for my file and I used "fstream reader;" so that I can type into my file and read it out.
 
 ### Console Input and Output
 
-!!!Replace with a summary and examples of how input and output have been used effectively and appropriately!!!
+My console input simply asks for the user to enter three colors and then the file name.
+
+cout << "select three colors. \n";
+getline( cin, colors);
+
+ofstream MyFile ("colors.css");
+MyFile << colors;
+MyFile.close();
+
+cout << "Open the file marked colors.css \n";
+getline (cin, text);
 
 ### Decisions
 
-!!!Replace with a summary and examples of how multiple decision constructs have been used effectively and appropriately!!!
+I used if and else for opening my file and when it is unable to open.
+
+if (reader.is_open() ){
+    while (!reader.eof() ){
+      getline( reader, text);
+      cout << colors << endl;
+      reader.close();
+    }
+  }else {
+    cout << "cannot open file. \n";
+  }
 
 ### Iteration
 
-!!!Replace with a summary and examples of how iteration has been used effectively and appropriately!!!
+I used a loop to ask the user at the end of the program if they want to select another three colors or not, but there is an issue that I can't figure out where the program resets whether the user enters yes or no.
+
+do{
+cout << "select three colors. \n";
+getline( cin, colors);
+
+ofstream MyFile ("colors.css");
+MyFile << colors;
+MyFile.close();
+
+cout << "Open the file marked colors.css \n";
+getline (cin, text);  
+reader.open(text,ios::in );
+  if (reader.is_open() ){
+    while (!reader.eof() ){
+      getline( reader, text);
+      cout << colors << endl;
+      reader.close();
+    }
+  }else {
+    cout << "cannot open file. \n";
+  }
+
+cout << "select more colors (yes/no)? \n";
+cin >> choice;
+cin.ignore();
+}while ("choice != no");
 
 ### File Input and Output
 
-!!!Replace with a summary and examples of how input and/or output of files have been used effectively and appropriately!!!
+I asked the user for the colors in saved it into the file then asked them to enter the file so that the colors they typed in can be displayed back.
+
+cout << "select three colors. \n";
+getline( cin, colors);
+
+ofstream MyFile ("colors.css");
+MyFile << colors;
+MyFile.close();
+
+cout << "Open the file marked colors.css \n";
+getline (cin, text);  
+reader.open(text,ios::in );
+  if (reader.is_open() ){
+    while (!reader.eof() ){
+      getline( reader, text);
+      cout << colors << endl;
+      reader.close();
+    }
+  }else {
+    cout << "cannot open file. \n";
+  }
 
 ### Arrays/Vectors
 
