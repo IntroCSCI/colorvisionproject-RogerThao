@@ -6,6 +6,8 @@
 
 using namespace std;
 
+string hexColors(string);
+
 int main(){
 vector <string> chosenColors;
 string choice = "";
@@ -46,6 +48,12 @@ cout << "select more colors (yes/no)? \n";
 cin >> choice;
 cin.ignore();
 }while(choice != "no");
+  
+  return 0;
+}
+
+string hex(string colors)
+{
   
   return 0;
 }
