@@ -6,27 +6,31 @@
 
 using namespace std;
 
-string hexColors(string);
+string Colors(string&);
 
 int main(){
 vector <string> chosenColors;
 string choice = "";
 string colors, text;
+string list;
 fstream reader;
 
 do
 {
-cout << "select three colors. \n";
+cout << "select three colors except black. \n";
 getline( cin, colors);
 fstream MyFile ("colors.css");
 MyFile << colors;
 chosenColors.push_back(colors);
 MyFile.close();
 
+
 for(int i=0; i < chosenColors.size(); i++)
 {
   cout << "The chosen colors are: " << colors << endl;
 }
+
+Colors(list);
 
 cout << "Open the file marked colors.css \n";
 getline (cin, text);  
@@ -44,6 +48,7 @@ reader.open(text,ios::in );
     cout << "cannot open file. \n";
   }
 
+
 cout << "select more colors (yes/no)? \n";
 cin >> choice;
 cin.ignore();
@@ -52,8 +57,17 @@ cin.ignore();
   return 0;
 }
 
-string hex(string colors)
+string Colors(string& list)
 {
-  
-  return 0;
+  string colors = "";
+  if(colors != "black")
+  {
+    for(int i = 0; i < 0; i++){
+      cout << list << endl;
+    }
+  }else
+  {
+    cout << "try again" << endl;
+  }
+  return list;
 }
