@@ -80,7 +80,7 @@ if (reader.is_open() ){
 
 ### Iteration
 
-I used a "do, while" loop and asked the user at the end of the program if they want to select another three colors or not.
+I used a "do, while" loop to asked the user if they want to select another three colors or not and if they enter yes then the loop restarts, but if they enter anything else then the program ends.
 
 do
 {
