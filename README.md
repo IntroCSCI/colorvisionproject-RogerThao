@@ -176,6 +176,8 @@ string Colors(string& list)
 
 I used two functions, the first one contains strings and uses pass by reference to change and store the colors entered by the user, then displays them out to the user.
 
+string Colors(string&);
+
 string Colors(string& list)
 {
   vector <string> chosenColors;
@@ -237,9 +239,11 @@ string Colors(string& list)
   return list;
 }
 
-The second function also contains string, but uses pass by value to store but not change the value in the function. The function stores the file input and displays them out to the user.
+The second function contains a void because it is not returning anything and uses pass by value to store but not change the value in the function. The function stores the file input and displays them out to the user.
 
-string chosenColors(string color)
+void chosenColors(string);
+
+void chosenColors(string color)
 {
   string colors, text;
   fstream reader;

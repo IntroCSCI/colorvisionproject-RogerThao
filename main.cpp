@@ -7,7 +7,7 @@
 using namespace std;
 
 string Colors(string&);
-string chosenColors(string);
+void chosenColors(string);
 
 int main(){
 string choice = "";
@@ -94,7 +94,7 @@ string Colors(string& list)
 
 
 
-string chosenColors(string color)
+void chosenColors(string color)
 {
   string colors, text;
   fstream reader;
@@ -114,5 +114,5 @@ string chosenColors(string color)
   {
     cout << "cannot open file. \n";
   }
-  return color;
+  
 }
