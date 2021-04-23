@@ -6,7 +6,7 @@ My program asks the user to enter three numbers then enter the file to diplay th
 
 ### v0.2 Updates
 
-*Coming soon*
+The user can now select individual colors to see their hex value.
 
 ### v1.0 Updates
 
@@ -29,11 +29,17 @@ g++ --std=c++11 *.cpp -o cvp
 Here is an example of the program running:
 
 ```
-select three colors. 
+select three colors together or individually to see the hex value. 
 red blue green
 Open the file marked colors.css 
 colors.css
 red blue green
+
+or
+
+select three colors together or individually to see the hex value.
+red
+red hex value = #FF0000
 ```
 
 ## C++ Guide
