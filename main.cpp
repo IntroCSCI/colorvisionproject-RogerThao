@@ -37,7 +37,7 @@ string Colors(string& list)
   string colors;
 
   cout << "select three colors together or individually to see the hex value. \n";
-  getline( cin, colors);
+  getline(cin, colors);
   if(colors == "red")
   {
     cout << "red hex value = #FF0000" << endl;
