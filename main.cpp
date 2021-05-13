@@ -3,7 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "colors.h"
+#include "colorized.h"
 
 using namespace std;
 
@@ -16,6 +16,8 @@ string colors, text;
 string list;
 string color;
 fstream reader;
+
+
 
 do
 {

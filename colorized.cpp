@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "colors.h"
+#include "colorized.h"
 using std::cout;
 using std::string;
 using std::vector;

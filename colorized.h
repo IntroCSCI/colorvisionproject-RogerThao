@@ -18,7 +18,6 @@ class colors{
   public:
     string Colors(string&);
     void chosenColors(string);
-}
-
+};
 
 #endif
