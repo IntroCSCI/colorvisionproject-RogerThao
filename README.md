@@ -35,12 +35,19 @@ The chosen colors are: red blue green
 Open the file marked colors.css 
 colors.css
 red blue green
+Select more colors (yes/no)?
+no
+For people with protanopia, deuteranopia, and tritanopia the colored hex values of #DE1961,#0088FF, and #FFBF00 are the least likely to cause issues.
 
 or
 
 select three colors together or individually to see the hex value.
 red
 red hex value = #FF0000
+Select more colors (yes/no)?
+no
+For people with protanopia, deuteranopia, and tritanopia the colored hex values of #DE1961,#0088FF, and #FFBF00 are the least likely to cause issues.
+
 ```
 
 ## C++ Guide
