@@ -125,7 +125,7 @@ do
     cout << "For people with protanopia, deuteranopia, and tritanopia the colored hex values of #DE1961, #0088FF, and #FFBF00 are the least likely to cause issues.";
   }else
   {
-    
+
   }
 }while(choice == "yes");
   
