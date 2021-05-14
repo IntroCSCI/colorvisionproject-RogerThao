@@ -66,7 +66,7 @@ getline (cin, text);
 
 ### Decisions
 
-I used if and else for opening my file and when it is unable to open.
+I used if and else for opening my file and when it is unable to open. 
 
 if (reader.is_open() ){
     while (!reader.eof() ){
@@ -76,6 +76,59 @@ if (reader.is_open() ){
     }
   }else {
     cout << "cannot open file. \n";
+  }
+
+I used another if/else to present the hex values of various colors.
+
+if(colors == "red")
+  {
+    cout << "red hex value = #FF0000" << endl;
+  }
+  else if(colors == "green")
+  {
+    cout << "green hex value = #00FF00" << endl;
+  }
+  else if(colors == "blue")
+  {
+    cout << "blue hex value = #0000FF" << endl;
+  }
+  else if(colors == "brown")
+  {
+    cout << "brown hex value = #A52A2A" << endl;
+  }
+  else if(colors == "yellow")
+  {
+    cout << "yellow hex value = #FFFF00" << endl;
+  }
+  else if(colors == "pink")
+  {
+    cout << "pink hex value = #FFC0CB" << endl;
+  }
+  else if(colors == "orange")
+  {
+    cout << "orange hex value = #FFA500" << endl;
+  }
+  else if(colors == "purple")
+  {
+    cout << "purple hex value = #800080" << endl;
+  }
+  else if(colors == "white")
+  {
+    cout << "white hex value = #FFFFFF" << endl;
+  }
+  else if(colors == "black")
+  {
+    cout << "black hex value = #000000" << endl;
+  }
+
+I added the final if/else to show the compadible hex colors if the user says "no" to end the program.
+
+if(choice != "yes")
+  {
+    cout << "For people with protanopia, deuteranopia, and tritanopia the colored hex values of #DE1961, #0088FF, and #FFBF00 are the least likely to cause issues.";
+  }else
+  {
+    
   }
 
 ### Iteration
