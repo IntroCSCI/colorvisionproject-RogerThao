@@ -2,15 +2,15 @@ Color Vision Project
 
 ## Description
 
-My program asks the user to enter three numbers then enter the file to diplay the colors back.
+My program asks the user to enter three colors then enter the file to diplay the colors back.
 
 ### v0.2 Updates
 
-The user can now select individual colors to see their hex value.
+The user can now choose to enter three colors or select an individual color to see their hex value.
 
 ### v1.0 Updates
 
-The user now sees which hex value combinations are least likely to cause problems.
+The user can enter three colors or select an individual color to see its hex value now sees which hex value and the program will display the combinationthat is least likely to cause problems.
 
 
 Roger Thao
@@ -142,17 +142,30 @@ if(choice != "yes")
 
 I used a "do, while" loop to asked the user if they want to select another three colors or not and if they enter yes then the loop restarts, but if they enter anything else then the program ends.
 
+I added some class codes to the do while loop and a final cout statement within an if/else loop.
+
 do
 {
-  Colors(list);
-
-  chosenColors(color);
+  colorized colors1;
+  colors1.Colors(list);
+  colors1.chosenColors(color);
 
   cout << "Select more colors (yes/no)? \n";
   cin >> choice;
   cin.ignore();
 
+  if(choice != "yes")
+  {
+    cout << "For people with protanopia, deuteranopia, and tritanopia the colored hex values of #DE1961, #0088FF, and #FFBF00 are the least likely to cause issues.";
+  }else
+  {
+
+  }
 }while(choice == "yes");
+  
+  return 0;
+}
+
 
 ### File Input and Output
 
